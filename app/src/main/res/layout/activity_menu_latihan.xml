@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MenuLatihan">
+
+    <Button
+        android:id="@+id/btnTabung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latihan 2.2"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnCuaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latihan 2.3"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnZodiak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latihan 3.1"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnZodiakView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latihan 4.1"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnLatihan51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latihan 5.1"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnLatihan52"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latihan 5.2"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF0000"
+            android:text="Back" />
+    </LinearLayout>
+
+</LinearLayout>

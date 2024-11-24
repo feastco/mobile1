@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MenuPraktikum"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnLatihan1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 2.2"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnLatihan2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 2.3"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnKalkulator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 2.4"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 3.2"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnLoginView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 3.3"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 4.1"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnPrak4_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 4.3"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnPrak5_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 5.1"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnPrak5_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 5.2"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnPrak5_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 5.3"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnPrak5_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 5.4"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnPrak6_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 6.3"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnPrak6_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 6.4"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnPrak7_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Praktikum 7.1"
+        android:backgroundTint="@color/logo"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FF0000"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FF0000"
+            android:text="Back" />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

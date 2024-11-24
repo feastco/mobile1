@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4582A9"
+    android:orientation="vertical"
+    tools:context=".Latihan5_1">
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="MEDDU EDUCATION"
+        android:textAlignment="center"
+        android:textColor="#C5C5C5"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="50dp"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="#4582A9"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#4582A9" />
+
+        <EditText
+            android:id="@+id/et_nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:capitalize="words"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusedByDefault="true"
+            android:hint="example@gmail.com"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="14"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/cardview_shadow_start_color"
+            android:textColorLink="@color/cardview_shadow_start_color" />
+
+        <!-- Input Kata Sandi -->
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Password"
+            android:textColor="#4582A9" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:hint="*****"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/cardview_shadow_start_color"
+            android:textColorLink="@color/cardview_shadow_start_color" />
+
+        <!-- Tombol Lupa Kata Sandi -->
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="Forgot Your Password?"
+            android:textColor="#4582A9" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:layout_gravity="center_horizontal"
+            app:cardBackgroundColor="#4582A9"
+            android:layout_marginTop="50dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4582A9"
+                android:src="@drawable/baseline_lock_outline_24"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4582A9"
+                android:text="LOG IN"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Don't have an account? Sign Up"
+            android:textAlignment="center"
+            android:textColor="#4582A9" />
+    </LinearLayout>
+
+</LinearLayout>

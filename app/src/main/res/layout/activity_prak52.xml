@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prak5_2">
+
+    <EditText
+        android:id="@+id/etReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Reminder Name" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etReminder"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Date"
+        android:inputType="date"
+        android:minHeight="48dp"/>
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etReminder"
+        android:layout_toRightOf="@id/editTextDate"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextParentCheck"/>
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTime"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/logo"
+        android:text="Done"
+        android:textColor="@color/white"/>
+</RelativeLayout>

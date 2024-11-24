@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutZodiakInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Tampilan saat tombol "Cek" -->
+            <LinearLayout
+                android:id="@+id/zodiakInfoContainer"
+                android:layout_width="310dp"
+                android:layout_height="66dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="97dp"
+                    android:layout_height="match_parent"
+                    android:text="Hello,"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="213dp"
+                    android:layout_height="match_parent"
+                    android:text="Umar"
+                    android:textSize="34sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zodiacInfo"
+                android:layout_width="310dp"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="Zodiak kamu adalah"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvZodiak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sagitarius"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!-- Bagian untuk gambar karakter zodiak -->
+
+            <!-- Deskripsi karakter zodiak -->
+
+            <ImageView
+                android:id="@+id/imageViewZodiac"
+                android:layout_width="292dp"
+                android:layout_height="266dp"
+                tools:srcCompat="@tools:sample/avatars[6]" />
+
+            <TextView
+                android:id="@+id/tvZodiak2"
+                android:layout_width="220dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:text="Sagitarius"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvKarakter"
+                android:layout_width="281dp"
+                android:layout_height="47dp"
+                android:gravity="bottom|start"
+                android:text="Karakter :"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDesc"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi karakter..."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvKep"
+                android:layout_width="286dp"
+                android:layout_height="47dp"
+                android:gravity="bottom|start"
+                android:text="Kepribadian :"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewKep"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi kepribadian..."
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

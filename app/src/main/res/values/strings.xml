@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">LatihanMobile</string>
+    <string name="login_form" />
+    <string name="name" />
+    <string-array name="zodiac_signs">
+        <item>Aquarius</item>
+        <item>Pisces</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+    </string-array>
+
+    <!-- Zodiac Descriptions -->
+    <string-array name="zodiac_descriptions">
+        <item>Si jenius eksentrik yang suka ngobrolin alien dan teori konspirasi. Mereka punya selera fashion yang unik dan selalu siap bikin orang lain ketawa.</item>
+        <item>Si pemimpi yang suka melamun dan punya dunia sendiri. Mereka artistik, sensitif, dan gampang nangis kalau nonton film sedih.</item>
+        <item>Si pemberani yang selalu siap menghadapi tantangan. Mereka energik, kompetitif, dan kadang-kadang suka lupa diri saking semangatnya.</item>
+        <item>Si penikmat hidup yang suka makan enak dan tidur nyenyak. Mereka setia, sabar, dan punya selera humor yang bikin orang lain ngakak.</item>
+        <item>Si kupu-kupu sosial yang punya banyak teman. Mereka cerdas, mudah beradaptasi, dan suka ngegosip (tapi jangan bilang-bilang ya!).</item>
+        <item>Si ibu rumah tangga yang penuh kasih sayang. Mereka sensitif, perhatian, dan selalu siap sedia tisu untuk teman yang lagi sedih.</item>
+        <item>Si raja/ratu drama yang suka jadi pusat perhatian. Mereka percaya diri, karismatik, dan punya gaya rambut yang selalu on point.</item>
+        <item>Si perfeksionis yang suka ngatur dan bersih-bersih. Mereka detail-oriented, praktis, dan selalu punya hand sanitizer di tasnya.</item>
+        <item>Si pencinta kedamaian yang suka menghindari konflik. Mereka diplomatis, adil, dan selalu berusaha bikin semua orang senang.</item>
+        <item>Si misterius yang suka menyimpan rahasia. Mereka intens, bersemangat, dan punya tatapan mata yang bikin orang lain merinding.</item>
+        <item>Si petualang yang suka jalan-jalan dan mencoba hal baru. Mereka optimis, jujur, dan kadang-kadang suka ceplas-ceplos.</item>
+        <item>Si pekerja keras yang ambisius dan disiplin. Mereka bertanggung jawab, praktis, dan selalu punya rencana untuk masa depan.</item>
+    </string-array>
+
+    <!--zodiac kepribadian-->
+    <string-array name="zodiac_kepribadian">
+        <item>Unik, inovatif, dan sedikit aneh (tapi dengan cara yang baik).</item>
+        <item>Kreatif, sensitif, dan suka berimajinasi.</item>
+        <item>Berani, energik, dan suka tantangan.</item>
+        <item>Sabar, setia, dan pencinta kenyamanan.</item>
+        <item>Cerdas, adaptif, dan suka bersosialisasi.</item>
+        <item>Penuh kasih sayang, perhatian, dan protektif.</item>
+        <item>Percaya diri, karismatik, dan suka jadi pusat perhatian.</item>
+        <item>Praktis, detail-oriented, dan perfeksionis.</item>
+        <item>Diplomatis, adil, dan pencinta kedamaian.</item>
+        <item>Misterius, intens, dan bersemangat.</item>
+        <item>Optimis, jujur, dan suka petualangan.</item>
+        <item>Bertanggung jawab, disiplin, dan ambisius.</item>
+    </string-array>
+
+    <!--zodiac picture-->
+    <string-array name="zodiac_pictures">
+        <item>aquarius</item>
+        <item>pisces</item>
+        <item>aries</item>
+        <item>taurus</item>
+        <item>gemini</item>
+        <item>cancer</item>
+        <item>leo</item>
+        <item>virgo</item>
+        <item>libra</item>
+        <item>scorpio</item>
+        <item>sagitarius</item>
+        <item>capricorn</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

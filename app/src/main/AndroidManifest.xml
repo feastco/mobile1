@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LatihanMobile"
+        tools:targetApi="31">
+        <activity
+            android:name=".UTS2"
+            android:exported="false" />
+        <activity
+            android:name=".UTS_A22202302996"
+            android:exported="false" />
+        <activity
+            android:name=".Praktikum7_1_SQLite"
+            android:exported="false" />
+        <activity
+            android:name=".RecycleViewMultiItem"
+            android:exported="false" />
+        <activity
+            android:name=".RecycleView"
+            android:exported="false" />
+        <activity
+            android:name=".ListView"
+            android:exported="false" />
+        <activity
+            android:name=".Latihan52"
+            android:exported="false" />
+        <activity
+            android:name=".MenuPraktikum"
+            android:exported="false" />
+        <activity
+            android:name=".MenuLatihan"
+            android:exported="false" />
+        <activity
+            android:name=".Latihan5_1"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Prak5_2"
+            android:exported="false"
+            android:label="Relative Layout"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Prak5_1"
+            android:exported="false"
+            android:label="Linear Layout"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Prak4_2"
+            android:exported="false"
+            android:label="Fragment Lanjutan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Fragment"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ZodiakView"
+            android:exported="false" />
+        <activity
+            android:name=".Zodiak"
+            android:exported="false"
+            android:label="Zodiak"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginView"
+            android:exported="false"
+            android:label="Welcome" />
+        <activity
+            android:name=".Form"
+            android:exported="false"
+            android:label="Login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Cuaca"
+            android:exported="false"
+            android:label="Latihan Cuaca"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Tabung"
+            android:exported="false"
+            android:label="Luas dan Volume Tabung"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Kalkulator"
+            android:exported="false"
+            android:label="Kalkulator Sederhana"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Latihan2"
+            android:exported="false"
+            android:label="Latihan 2"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Identitas"
+            android:exported="false"
+            android:label="Identitas Saya"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Latihan1"
+            android:exported="false"
+            android:label="Latihan 1"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
