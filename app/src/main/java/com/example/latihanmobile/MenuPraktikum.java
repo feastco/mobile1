@@ -133,6 +133,15 @@ public class MenuPraktikum extends AppCompatActivity {
                 finish();
             }
         });
+        Button prak72 = (Button) findViewById(R.id.btnPrak7_2);
+        prak72.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuPraktikum.this, Prak7_2.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         Button btnExit = (Button) findViewById(R.id.btnExit);
         btnExit.setOnClickListener(new View.OnClickListener() {
             @Override
