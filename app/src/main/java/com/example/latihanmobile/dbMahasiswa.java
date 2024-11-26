@@ -51,6 +51,10 @@ public class dbMahasiswa extends SQLiteOpenHelper {
         Cursor res = db.rawQuery("select * from "+TABLE_NAME,null);
         return res;
     }
+    public Cursor getDataByNim(String nim) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE nim=?", new String[]{nim});
+    }
     public boolean updateData(String nim, String nama, Double ipk){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues content = new ContentValues();

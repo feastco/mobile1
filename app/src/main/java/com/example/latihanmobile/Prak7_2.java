@@ -1,5 +1,6 @@
 package com.example.latihanmobile;
 
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -19,7 +21,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Prak7_2 extends AppCompatActivity {
     EditText etNim, etNama, etIpk;
-    Button btnSimpan, btnKeluar, btnHapus;;
+    Button btnSimpan, btnKeluar;
+    ImageButton btnEdit, btnHapus;
     dbMahasiswa db;
     ListView lvLihat;
     adapterMahasiswa adapter;
@@ -49,15 +52,32 @@ public class Prak7_2 extends AppCompatActivity {
                 if(etIpk.getText().toString().isEmpty()){
                     etIpk.setText("0");
                 }
-                boolean isInsert = db.insertData(etNim.getText().toString(),
-                        etNama.getText().toString(),
-                        Double.parseDouble(etIpk.getText().toString()));
-                if(isInsert==true){
-                    view_mahasiswa();
-                    kosong();
-                    Toast.makeText(Prak7_2.this, "Data berhasil disimpan", Toast.LENGTH_SHORT).show();
-                }else {
-                    Toast.makeText(Prak7_2.this, "Data gagal disimpan", Toast.LENGTH_SHORT).show();
+                String nim = etNim.getText().toString();
+                String nama = etNama.getText().toString();
+                double ipk = Double.parseDouble(etIpk.getText().toString());
+                // Periksa apakah data dengan nim yang sama sudah ada
+                Cursor cursor = db.getDataByNim(nim);
+                if (cursor != null && cursor.moveToFirst()) {
+                    // Data sudah ada, jalankan updateData()
+                    boolean isUpdated = db.updateData(nim, nama, ipk);
+                    if (isUpdated) {
+                        view_mahasiswa();
+                        kosong();
+                        Toast.makeText(Prak7_2.this, "Data berhasil diperbarui", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(Prak7_2.this, "Data gagal diperbarui", Toast.LENGTH_SHORT).show();
+                    }
+                    cursor.close();
+                } else {
+                    // Data belum ada, jalankan insertData()
+                    boolean isInsert = db.insertData(nim, nama, ipk);
+                    if (isInsert) {
+                        view_mahasiswa();
+                        kosong();
+                        Toast.makeText(Prak7_2.this, "Data berhasil disimpan", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(Prak7_2.this, "Data gagal disimpan", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });
@@ -90,6 +110,23 @@ public class Prak7_2 extends AppCompatActivity {
             Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void editData(String nim) {
+        Cursor cursor = db.getDataByNim(nim);
+        if (cursor != null && cursor.moveToFirst()) { // Periksa apakah cursor valid dan tidak kosong
+            try {
+                etNim.setText(cursor.getString(cursor.getColumnIndexOrThrow("nim")));
+                etNama.setText(cursor.getString(cursor.getColumnIndexOrThrow("nama")));
+                etIpk.setText(cursor.getString(cursor.getColumnIndexOrThrow("ipk")));
+            } finally {
+                cursor.close(); // Tutup cursor setelah selesai digunakan
+            }
+        } else {
+            // Handle kasus jika data tidak ditemukan
+            Toast.makeText(this, "Data tidak ditemukan", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 
     public void kosong(){
         etNim.setText("");
