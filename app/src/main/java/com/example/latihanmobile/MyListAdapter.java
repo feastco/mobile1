@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder>{
     MyListData[] listdata;
-    public MyListAdapter(MyListData[] listData){this.listdata=listdata;}
+    public MyListAdapter(MyListData[] listData){this.listdata = listData; }
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
@@ -33,7 +33,9 @@ public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder
         });
     }
     @Override
-    public int getItemCount(){return listdata.length;}
+    public int getItemCount(){
+        return listdata == null ? 0 : listdata.length;
+    }
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public ImageView imageView;
         public TextView textView;
