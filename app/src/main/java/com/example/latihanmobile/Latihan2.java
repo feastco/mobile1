@@ -17,12 +17,12 @@ import androidx.core.view.WindowInsetsCompat;
 public class Latihan2 extends AppCompatActivity {
     RadioGroup rg;
     TextView tx;
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_latihan2);
         rg = (RadioGroup) findViewById(R.id.radioGroup);
         tx = (TextView) findViewById(R.id.Result);
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){

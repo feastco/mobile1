@@ -79,6 +79,23 @@ public class MenuLatihan extends AppCompatActivity {
                 finish();
             }
         });
+        Button Latihan61 = (Button) findViewById(R.id.btnLatihan61);
+        Latihan61.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuLatihan.this, Latihan6_1.class);
+                startActivity(intent);finish();
+            }
+        });
+        Button Latihan71 = (Button) findViewById(R.id.btnLatihan71);
+        Latihan71.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuLatihan.this, Latihan7_2.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         Button quit = (Button) findViewById(R.id.btnExit);
         quit.setOnClickListener(new View.OnClickListener() {
             @Override

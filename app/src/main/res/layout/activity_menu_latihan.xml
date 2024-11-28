@@ -8,48 +8,74 @@
     android:orientation="vertical"
     tools:context=".MenuLatihan">
 
-    <Button
-        android:id="@+id/btnTabung"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Latihan 2.2"
-        android:backgroundTint="@color/logo"
-        android:layout_marginTop="8dp"/>
-    <Button
-        android:id="@+id/btnCuaca"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Latihan 2.3"
-        android:backgroundTint="@color/logo"
-        android:layout_marginTop="8dp"/>
-    <Button
-        android:id="@+id/btnZodiak"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Latihan 3.1"
-        android:backgroundTint="@color/logo"
-        android:layout_marginTop="8dp"/>
-    <Button
-        android:id="@+id/btnZodiakView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Latihan 4.1"
-        android:backgroundTint="@color/logo"
-        android:layout_marginTop="8dp"/>
-    <Button
-        android:id="@+id/btnLatihan51"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Latihan 5.1"
-        android:backgroundTint="@color/logo"
-        android:layout_marginTop="8dp"/>
-    <Button
-        android:id="@+id/btnLatihan52"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Latihan 5.2"
-        android:backgroundTint="@color/logo"
-        android:layout_marginTop="8dp"/>
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnTabung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latihan 2.2"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+            <Button
+                android:id="@+id/btnCuaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latihan 2.3"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+            <Button
+                android:id="@+id/btnZodiak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latihan 3.1"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+            <Button
+                android:id="@+id/btnZodiakView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latihan 4.1"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+            <Button
+                android:id="@+id/btnLatihan51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latihan 5.1"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+            <Button
+                android:id="@+id/btnLatihan52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latihan 5.2"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+            <Button
+                android:id="@+id/btnLatihan61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latihan 6.1"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+            <Button
+                android:id="@+id/btnLatihan71"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latihan 7.1"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"

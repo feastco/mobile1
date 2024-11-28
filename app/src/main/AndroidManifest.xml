@@ -13,6 +13,12 @@
         android:theme="@style/Theme.LatihanMobile"
         tools:targetApi="31">
         <activity
+            android:name=".Latihan6_1"
+            android:exported="false" />
+        <activity
+            android:name=".Latihan7_2"
+            android:exported="false" />
+        <activity
             android:name=".Prak7_2"
             android:exported="false" />
         <activity
