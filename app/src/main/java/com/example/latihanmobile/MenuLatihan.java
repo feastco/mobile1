@@ -96,6 +96,15 @@ public class MenuLatihan extends AppCompatActivity {
                 finish();
             }
         });
+        Button Latihan81 = (Button) findViewById(R.id.btnLatihan81);
+        Latihan81.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuLatihan.this, Latihan8_1.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         Button quit = (Button) findViewById(R.id.btnExit);
         quit.setOnClickListener(new View.OnClickListener() {
             @Override

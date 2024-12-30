@@ -7,4 +7,40 @@
     android:layout_height="match_parent"
     tools:context=".Latihan8_1">
 
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ecommerce"
+            android:contentDescription="TODO"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:text="Umar Store"
+            android:layout_marginStart="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold|italic" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="always"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

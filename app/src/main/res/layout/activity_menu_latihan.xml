@@ -73,7 +73,13 @@
                 android:text="Latihan 7.1"
                 android:backgroundTint="@color/logo"
                 android:layout_marginTop="8dp"/>
-
+            <Button
+                android:id="@+id/btnLatihan81"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latihan 8.1"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
         </LinearLayout>
     </ScrollView>
 

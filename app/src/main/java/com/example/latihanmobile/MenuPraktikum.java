@@ -160,6 +160,60 @@ public class MenuPraktikum extends AppCompatActivity {
                 finish();
             }
         });
+        Button prak81 = (Button) findViewById(R.id.btnPrak8_1);
+        prak81.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuPraktikum.this, Prak8_1.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        Button prak82 = (Button) findViewById(R.id.btnPrak8_2);
+        prak82.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuPraktikum.this, Prak8_2.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        Button prak83 = (Button) findViewById(R.id.btnPrak8_3);
+        prak83.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuPraktikum.this, Prak8_3.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        Button prak84 = (Button) findViewById(R.id.btnPrak8_4);
+        prak84.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuPraktikum.this, Prak8_4.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        Button prak91 = (Button) findViewById(R.id.btnPrak9_1);
+        prak91.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuPraktikum.this, Prak9_1.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        Button prak101 = (Button) findViewById(R.id.btnPrak10_1);
+        prak101.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuPraktikum.this, Prak10_1.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         Button btnExit = (Button) findViewById(R.id.btnExit);
         btnExit.setOnClickListener(new View.OnClickListener() {
             @Override

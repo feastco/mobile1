@@ -124,6 +124,54 @@
                 android:backgroundTint="@color/logo"
                 android:layout_marginTop="8dp"/>
 
+            <Button
+                android:id="@+id/btnPrak8_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Praktikum 8.1"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnPrak8_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Praktikum 8.2"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnPrak8_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Praktikum 8.3"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnPrak8_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Praktikum 8.4"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnPrak9_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Praktikum 9.1"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnPrak10_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Praktikum 10.1"
+                android:backgroundTint="@color/logo"
+                android:layout_marginTop="8dp"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="93dp"

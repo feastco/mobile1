@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="15dp"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
     tools:context=".Latihan7_2">
 
     <ScrollView
@@ -258,7 +260,7 @@
             <ListView
                 android:id="@+id/lvLihat"
                 android:layout_width="match_parent"
-                android:layout_height="147dp"
+                android:layout_height="200dp"
                 android:layout_marginTop="20dp" />
 
         </LinearLayout>

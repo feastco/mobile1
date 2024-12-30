@@ -301,7 +301,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:$USER_HOME$/Android/Sdk/icons/material/materialicons/delete/baseline_delete_24.xml" />
+                                      <entry key="url" value="file:$USER_HOME$/Android/Sdk/icons/material/materialicons/format_list_bulleted/baseline_format_list_bulleted_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -311,8 +311,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="ff0000" />
-                            <entry key="outputName" value="baseline_delete_24" />
+                            <entry key="color" value="0048ff" />
+                            <entry key="outputName" value="baseline_format_list_bulleted_24" />
                           </map>
                         </option>
                       </PersistentState>
